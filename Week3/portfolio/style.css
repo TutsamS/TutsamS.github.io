@@ -1,0 +1,124 @@
+
+/* CSS HEX */
+* {
+    --black: #111111ff;
+    --space-indigo: #3b3355ff;
+    --dusty-grape: #5d5d81ff;
+    --pale-sky: #bfcde0ff;
+    --white: #fefcfdff;
+}
+
+
+body {
+    background-color: var(--black);
+    background-image: url('./assets/css-pattern-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'PT Sans';
+    color: var(--pale-sky);
+    margin: 0;
+    padding: 0 0 60px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.name {
+    color: var(--space-indigo);
+    text-align: center;
+    font-family: 'PT Serif';
+    font-size: 60px;
+    font-weight: bold;
+    background-color: var(--dusty-grape);
+    border-radius: 50px;
+    padding: 30px;
+    margin-top: 50px;
+    margin-inline: 100px;
+    border: var(--space-indigo) solid 5px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.bio {
+    text-align: center;
+    color: var(--dusty-grape);
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+h2 {
+    font-family: 'PT Serif';
+    font-size: 28px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: var(--dusty-grape);
+    border-bottom: 2px solid var(--space-indigo);
+    padding-bottom: 8px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card {
+    background-color: var(--dusty-grape);
+    border: var(--space-indigo) solid 3px;
+    border-radius: 20px;
+    padding: 24px 28px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card h3 {
+    font-family: 'PT Serif', serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--space-indigo);
+    margin: 0 0 8px 0;
+}
+
+.card p {
+    font-size: 15px;
+    font-weight: lighter;
+    color: var(--black);
+    margin: 0 0 12px 0;
+}
+
+.card .stack {
+    font-size: 13px;
+    color: var(--space-indigo);
+}
+
+.contact-links {
+    display: flex;
+    gap: 12px;
+}
+
+.contact-links a {
+    color: var(--space-indigo);
+    text-decoration: none;
+    border: 2px solid var(--space-indigo);
+    background-color: var(--dusty-grape);
+    border-radius: 20px;
+    padding: 10px 24px;
+    font-size: 16px;
+}
+
+.contact-links a:hover {
+    background-color: var(--space-indigo);
+    color: var(--pale-sky);
+}
